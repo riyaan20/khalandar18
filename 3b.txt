@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Program-3B</title>
+    <h1>Program-3B</h1>
+    <h2>Develop a JavaScript program to display a confirmation message on a button click.</h2>
+</head>
+<body>
+    <p>
+        Click the button to display a confirm box.
+    </p>
+    <p id="add"></p>
+
+    <button onclick="ClickFunction()">
+        Click here!
+    </button>
+    <script>
+        function ClickFunction() {
+            let result = confirm("Press OK to close this option");
+            if (result === true) {
+
+                document.getElementById("add").textContent =
+                    "User clicked OK";
+                console.log("User clicked OK");
+            } else {
+                document.getElementById("add").textContent =
+                    "User clicked Cancel";
+                console.log("User clicked Cancel");
+            }
+        }
+    </script>
+</body>
+</html>
